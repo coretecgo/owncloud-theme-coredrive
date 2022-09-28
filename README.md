@@ -1,20 +1,20 @@
-## theme-core for ownCloud
+## theme-gav for ownCloud
 
-### Use the theme-core App
+### Use the theme-gav App
 
-To use the `theme-core` app, clone this repository to the `/var/lib/univention-appcenter/apps/owncloud/data/custom` folder on your server. Please note that the Apache user needs access rights to the folder and its content. As an example, use the following command to adjust the permissions: `chown -R www-data:www-data theme-core`.
+To use the `theme-gav` app, clone this repository to the `/var/lib/univention-appcenter/apps/owncloud/data/custom` folder on your server. Please note that the Apache user needs access rights to the folder and its content. As an example, use the following command to adjust the permissions: `chown -R www-data:www-data theme-gav`.
 
 ### Change values
 Please have a look at the file `defaults.php` if you want to change texts. The copyright text on the start page and other texts are well documented there.
 
 ### Integrity check
 
-Since files in the theme must be changeable, it has not been signed by us. Therefore an `integrity check warning` appears in your ownCloud instance. You can deactivate it for the `theme-core` app by adding following config parameter to `config/config.php`. You can find the config directory in the root folder of your instance.
+Since files in the theme must be changeable, it has not been signed by us. Therefore an `integrity check warning` appears in your ownCloud instance. You can deactivate it for the `theme-gav` app by adding following config parameter to `config/config.php`. You can find the config directory in the root folder of your instance.
 
 ```
-'theme' => 'theme-core',
+'theme' => 'theme-gav',
 'integrity.ignore.missing.app.signature' => [
-      'theme-core',
+      'theme-gav',
  ],
 ```
 
@@ -22,7 +22,7 @@ Since files in the theme must be changeable, it has not been signed by us. There
 
 ```
 univention-app shell owncloud
-occ app:enable theme-core
+occ app:enable theme-gav
 exit
 ```
 
