@@ -73,7 +73,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getTitle() {
-return 'GAV Cloud - Drive';
+return 'CORE Drive - GAV Resorts';
 
 	}
 
@@ -82,7 +82,7 @@ return 'GAV Cloud - Drive';
 	 * @return string title
 	 */
 	public function getName() {
-return 'GAV Cloud';
+return 'CORE Drive';
 
 	}
 
@@ -91,7 +91,7 @@ return 'GAV Cloud';
 	 * @return string title
 	 */
 	public function getHTMLName() {
-return '<b>GAV</b> Cloud';
+return '<b>CORE</b> Drive';
 
 	}
 
@@ -100,7 +100,7 @@ return '<b>GAV</b> Cloud';
 	 * @return string entity name
 	 */
 	public function getEntity() {
-return 'GAV Cloud Co.';
+return 'CORE TECNOLOGIA';
 
 	}
 
@@ -117,13 +117,13 @@ return 'GAV Cloud Co.';
 	 * @return string logo claim
 	 */
 	public function getLogoClaim() {
-return '<a href="https://gavresorts.com.br">GAV Resorts</a>';
+return '<a href="https://coretecnologia.net.br">CORE TECNOLOGIA</a>';
 
 	}
 
 	public function getPrivacyPolicyUrl() {
 		try {
-return \OC::$server->getConfig()->getAppValue('gav', 'legal.privacy_policy_url', '');
+return \OC::$server->getConfig()->getAppValue('core', 'legal.privacy_policy_url', '');
 
 		} catch (\Exception $e) {
 			return '';
@@ -132,7 +132,7 @@ return \OC::$server->getConfig()->getAppValue('gav', 'legal.privacy_policy_url',
 
 	public function getImprintUrl() {
 		try {
-return \OC::$server->getConfig()->getAppValue('gav', 'legal.imprint_url', '');
+return \OC::$server->getConfig()->getAppValue('core', 'legal.imprint_url', '');
 
 		} catch (\Exception $e) {
 			return '';
@@ -140,7 +140,7 @@ return \OC::$server->getConfig()->getAppValue('gav', 'legal.imprint_url', '');
 	}
 
 	public function getL10n() {
-return \OC::$server->getL10N('gav');
+return \OC::$server->getL10N('core');
 
 	}
 
