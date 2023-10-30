@@ -73,7 +73,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getTitle() {
-return 'CORE Drive - GAV Resorts';
+return 'CORE Drive';
 
 	}
 

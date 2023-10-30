@@ -1,20 +1,20 @@
-## theme-gav for ownCloud
+## theme-coredrive for ownCloud
 
-### Use the theme-gav App
+### Use the theme-coredrive App
 
-To use the `theme-gav` app, clone this repository to the `/var/lib/univention-appcenter/apps/owncloud/data/custom` folder on your server. Please note that the Apache user needs access rights to the folder and its content. As an example, use the following command to adjust the permissions: `chown -R www-data:www-data theme-gav`.
+To use the `theme-coredrive` app, clone this repository to the `/var/lib/univention-appcenter/apps/owncloud/data/custom` folder on your server. Please note that the Apache user needs access rights to the folder and its content. As an example, use the following command to adjust the permissions: `chown -R www-data:www-data theme-coredrive`.
 
 ### Change values
 Please have a look at the file `defaults.php` if you want to change texts. The copyright text on the start page and other texts are well documented there.
 
 ### Integrity check
 
-Since files in the theme must be changeable, it has not been signed by us. Therefore an `integrity check warning` appears in your ownCloud instance. You can deactivate it for the `theme-gav` app by adding following config parameter to `config/config.php`. You can find the config directory in the root folder of your instance.
+Since files in the theme must be changeable, it has not been signed by us. Therefore an `integrity check warning` appears in your ownCloud instance. You can deactivate it for the `theme-coredrive` app by adding following config parameter to `config/config.php`. You can find the config directory in the root folder of your instance.
 
 ```
-'theme' => 'theme-gav',
+'theme' => 'theme-coredrive',
 'integrity.ignore.missing.app.signature' => [
-      'theme-gav',
+      'theme-coredrive',
  ],
 ```
 
@@ -22,7 +22,7 @@ Since files in the theme must be changeable, it has not been signed by us. There
 
 ```
 univention-app shell owncloud
-occ app:enable theme-gav
+occ app:enable theme-coredrive
 exit
 ```
 
